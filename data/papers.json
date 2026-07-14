@@ -1,0 +1,327 @@
+[
+    {
+        "id": 1,
+        "title": "PyramidTNT: Improved Transformer-in-Transformer Baselines with Pyramid Architecture",
+        "author": "Kai Han, Jianyuan Guo, Yehui Tang, Yunhe Wang",
+        "category": "cs.CV",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.CV"
+        ],
+        "content": "Transformer networks have achieved great progress for computer vision tasks. Transformer-in-Transformer (TNT) architecture utilizes inner transformer and outer transformer to extract both local and global representations. In this work, we present new TNT baselines by introducing two advanced designs: 1) pyramid architecture, and 2) convolutional stem. The new \"PyramidTNT\" significantly improves the original TNT by establishing hierarchical representations. PyramidTNT achieves better performances than the previous state-of-the-art vision transformers such as Swin Transformer. We hope this new baseline will be helpful to the further research and application of vision transformer. Code will be available at https://github.com/huawei-noah/CV-Backbones/tree/master/tnt_pytorch.",
+        "year": 2022,
+        "source": "http://arxiv.org/abs/2201.00978v1",
+        "pdf_url": "https://arxiv.org/pdf/2201.00978v1"
+    },
+    {
+        "id": 2,
+        "title": "Learning to Cluster Faces via Transformer",
+        "author": "Jinxing Ye, Xioajiang Peng, Baigui Sun, Kai Wang, Xiuyu Sun, Hao Li, Hanqing Wu",
+        "category": "cs.CV",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.CV"
+        ],
+        "content": "Face clustering is a useful tool for applications like automatic face annotation and retrieval. The main challenge is that it is difficult to cluster images from the same identity with different face poses, occlusions, and image quality. Traditional clustering methods usually ignore the relationship between individual images and their neighbors which may contain useful context information. In this paper, we repurpose the well-known Transformer and introduce a Face Transformer for supervised face clustering. In Face Transformer, we decompose the face clustering into two steps: relation encoding and linkage predicting. Specifically, given a face image, a \\textbf{relation encoder} module aggregates local context information from its neighbors and a \\textbf{linkage predictor} module judges whether a pair of images belong to the same cluster or not. In the local linkage graph view, Face Transformer can generate more robust node and edge representations compared to existing methods. Experiments on both MS-Celeb-1M and DeepFashion show that our method achieves state-of-the-art performance, e.g., 91.12\\% in pairwise F-score on MS-Celeb-1M.",
+        "year": 2021,
+        "source": "http://arxiv.org/abs/2104.11502v1",
+        "pdf_url": "https://arxiv.org/pdf/2104.11502v1"
+    },
+    {
+        "id": 3,
+        "title": "MLP Can Be A Good Transformer Learner",
+        "author": "Sihao Lin, Pumeng Lyu, Dongrui Liu, Tao Tang, Xiaodan Liang, Andy Song, Xiaojun Chang",
+        "category": "cs.CV",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.CV"
+        ],
+        "content": "Self-attention mechanism is the key of the Transformer but often criticized for its computation demands. Previous token pruning works motivate their methods from the view of computation redundancy but still need to load the full network and require same memory costs. This paper introduces a novel strategy that simplifies vision transformers and reduces computational load through the selective removal of non-essential attention layers, guided by entropy considerations. We identify that regarding the attention layer in bottom blocks, their subsequent MLP layers, i.e. two feed-forward layers, can elicit the same entropy quantity. Meanwhile, the accompanied MLPs are under-exploited since they exhibit smaller feature entropy compared to those MLPs in the top blocks. Therefore, we propose to integrate the uninformative attention layers into their subsequent counterparts by degenerating them into identical mapping, yielding only MLP in certain transformer blocks. Experimental results on ImageNet-1k show that the proposed method can remove 40% attention layer of DeiT-B, improving throughput and memory bound without performance compromise. Code is available at https://github.com/sihaoevery/lambda_vit.",
+        "year": 2024,
+        "source": "http://arxiv.org/abs/2404.05657v1",
+        "pdf_url": "https://arxiv.org/pdf/2404.05657v1"
+    },
+    {
+        "id": 4,
+        "title": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents",
+        "author": "Renxi Wang, Haonan Li, Xudong Han, Yixuan Zhang, Timothy Baldwin",
+        "category": "cs.CL",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.CL"
+        ],
+        "content": "Large language models (LLMs) have achieved success in acting as agents, which interact with environments through tools such as search engines. However, LLMs are optimized for language generation instead of tool use during training or alignment, limiting their effectiveness as agents. To resolve this problem, previous work has first collected interaction trajectories between LLMs and environments, using only trajectories that successfully finished the task to fine-tune smaller models, making fine-tuning data scarce and acquiring it both difficult and costly. Discarding failed trajectories also leads to significant wastage of data and resources and limits the possible optimization paths during fine-tuning. In this paper, we argue that unsuccessful trajectories offer valuable insights, and LLMs can learn from these trajectories through appropriate quality control and fine-tuning strategies. By simply adding a prefix or suffix that tells the model whether to generate a successful trajectory during training, we improve model performance by a large margin on mathematical reasoning, multi-hop question answering, and strategic question answering tasks. We further analyze the inference results and find that our method provides a better trade-off between valuable information and errors in unsuccessful trajectories. To our knowledge, we are the first to demonstrate the value of negative trajectories and their application in agent-tunning scenarios. Our findings offer guidance for developing better agent-tuning methods and low-resource data usage techniques.",
+        "year": 2024,
+        "source": "http://arxiv.org/abs/2402.11651v2",
+        "pdf_url": "https://arxiv.org/pdf/2402.11651v2"
+    },
+    {
+        "id": 5,
+        "title": "Demystifying Instruction Mixing for Fine-tuning Large Language Models",
+        "author": "Renxi Wang, Haonan Li, Minghao Wu, Yuxia Wang, Xudong Han, Chiyu Zhang, Timothy Baldwin",
+        "category": "cs.CL",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.CL",
+            "cs.AI"
+        ],
+        "content": "Instruction tuning significantly enhances the performance of large language models (LLMs) across various tasks. However, the procedure to optimizing the mixing of instruction datasets for LLM fine-tuning is still poorly understood. This study categorizes instructions into three primary types: NLP downstream tasks, coding, and general chat. We explore the effects of instruction tuning on different combinations of datasets on LLM performance, and find that certain instruction types are more advantageous for specific applications but can negatively impact other areas. This work provides insights into instruction mixtures, laying the foundations for future research.",
+        "year": 2023,
+        "source": "http://arxiv.org/abs/2312.10793v3",
+        "pdf_url": "https://arxiv.org/pdf/2312.10793v3"
+    },
+    {
+        "id": 6,
+        "title": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+        "author": "Can Xu, Qingfeng Sun, Kai Zheng, Xiubo Geng, Pu Zhao, Jiazhan Feng, Chongyang Tao, Qingwei Lin, Daxin Jiang",
+        "category": "cs.CL",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.CL",
+            "cs.AI"
+        ],
+        "content": "Training large language models (LLMs) with open-domain instruction following data brings colossal success. However, manually creating such instruction data is very time-consuming and labor-intensive. Moreover, humans may struggle to produce high-complexity instructions. In this paper, we show an avenue for creating large amounts of instruction data with varying levels of complexity using LLM instead of humans. Starting with an initial set of instructions, we use our proposed Evol-Instruct to rewrite them step by step into more complex instructions. Then, we mix all generated instruction data to fine-tune LLaMA. We call the resulting model WizardLM. Human evaluations on a complexity-balanced test bed and Vicuna's testset show that instructions from Evol-Instruct are superior to human-created ones. By analyzing the human evaluation results of the high complexity part, we demonstrate that outputs from our WizardLM are preferred to outputs from OpenAI ChatGPT. In GPT-4 automatic evaluation, WizardLM achieves more than 90\\% capacity of ChatGPT on 17 out of 29 skills. Even though WizardLM still lags behind ChatGPT in some aspects, our findings suggest that fine-tuning with AI-evolved instructions is a promising direction for enhancing LLMs. Our code and data are public at https://github.com/nlpxucan/WizardLM",
+        "year": 2023,
+        "source": "http://arxiv.org/abs/2304.12244v3",
+        "pdf_url": "https://arxiv.org/pdf/2304.12244v3"
+    },
+    {
+        "id": 7,
+        "title": "AR-RAG: Autoregressive Retrieval Augmentation for Image Generation",
+        "author": "Jingyuan Qi, Zhiyang Xu, Qifan Wang, Lifu Huang",
+        "category": "cs.CV",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.CV"
+        ],
+        "content": "We introduce Autoregressive Retrieval Augmentation (AR-RAG), a novel paradigm that enhances image generation by autoregressively incorporating knearest neighbor retrievals at the patch level. Unlike prior methods that perform a single, static retrieval before generation and condition the entire generation on fixed reference images, AR-RAG performs context-aware retrievals at each generation step, using prior-generated patches as queries to retrieve and incorporate the most relevant patch-level visual references, enabling the model to respond to evolving generation needs while avoiding limitations (e.g., over-copying, stylistic bias, etc.) prevalent in existing methods. To realize AR-RAG, we propose two parallel frameworks: (1) Distribution-Augmentation in Decoding (DAiD), a training-free plug-and-use decoding strategy that directly merges the distribution of model-predicted patches with the distribution of retrieved patches, and (2) Feature-Augmentation in Decoding (FAiD), a parameter-efficient fine-tuning method that progressively smooths the features of retrieved patches via multi-scale convolution operations and leverages them to augment the image generation process. We validate the effectiveness of AR-RAG on widely adopted benchmarks, including Midjourney-30K, GenEval and DPG-Bench, demonstrating significant performance gains over state-of-the-art image generation models.",
+        "year": 2025,
+        "source": "http://arxiv.org/abs/2506.06962v3",
+        "pdf_url": "https://arxiv.org/pdf/2506.06962v3"
+    },
+    {
+        "id": 8,
+        "title": "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation",
+        "author": " Xiangrong,  Zhu, Yuan Xu, Tianjian Liu, Jingwei Sun, Yu Zhang, Xin Tong",
+        "category": "cs.HC",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.HC"
+        ],
+        "content": "Human cognition is constrained by processing limitations, leading to cognitive overload and inefficiencies in knowledge synthesis and decision-making. Large Language Models (LLMs) present an opportunity for cognitive augmentation, but their current reactive nature limits their real-world applicability. This position paper explores the potential of context-aware cognitive augmentation, where LLMs dynamically adapt to users' cognitive states and task environments to provide appropriate support. Through a think-aloud study in an exhibition setting, we examine how individuals interact with multi-modal information and identify key cognitive challenges in structuring, retrieving, and applying knowledge. Our findings highlight the need for AI-driven cognitive support systems that integrate real-time contextual awareness, personalized reasoning assistance, and socially adaptive interactions. We propose a framework for AI augmentation that seamlessly transitions between real-time cognitive support and post-experience knowledge organization, contributing to the design of more effective human-centered AI systems.",
+        "year": 2025,
+        "source": "http://arxiv.org/abs/2504.13684v1",
+        "pdf_url": "https://arxiv.org/pdf/2504.13684v1"
+    },
+    {
+        "id": 9,
+        "title": "Factually: Exploring Wearable Fact-Checking for Augmented Truth Discernment",
+        "author": "Chitralekha Gupta, Hanjun Wu, Praveen Sasikumar, Shreyas Sridhar, Priambudi Bagaskara, Suranga Nanayakkara",
+        "category": "cs.HC",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.HC",
+            "cs.ET"
+        ],
+        "content": "Wearable devices are transforming human capabilities by seamlessly augmenting cognitive functions. In this position paper, we propose a voice-based, interactive learning companion designed to amplify and extend cognitive abilities through informal learning. Our vision is threefold: (1) to enable users to discover new knowledge on-the-go through contextual interactive quizzes, fostering critical thinking and mindfulness, (2) to proactively detect misinformation, empowering users to critically assess information in real time, and (3) to provide spoken language correction and prompting hints for second language learning and effective communication. As an initial step toward this vision, we present Factually - a proactive, wearable fact-checking system integrated into devices like smartwatches or rings. Factually discreetly alerts users to potential falsehoods via vibrotactile feedback, helping them assess information critically. We demonstrate its utility through three illustrative scenarios, highlighting its potential to extend cognitive abilities for real-time misinformation detection. Early qualitative feedback suggests that Factually can enhance users' fact-checking capabilities, offering both practical and experiential benefits.",
+        "year": 2025,
+        "source": "http://arxiv.org/abs/2504.17204v1",
+        "pdf_url": "https://arxiv.org/pdf/2504.17204v1"
+    },
+    {
+        "id": 10,
+        "title": "WiCV 2019: The Sixth Women In Computer Vision Workshop",
+        "author": "Irene Amerini, Elena Balashova, Sayna Ebrahimi, Kathryn Leonard, Arsha Nagrani, Amaia Salvador",
+        "category": "cs.CV",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.CV"
+        ],
+        "content": "In this paper we present the Women in Computer Vision Workshop - WiCV 2019, organized in conjunction with CVPR 2019. This event is meant for increasing the visibility and inclusion of women researchers in the computer vision field. Computer vision and machine learning have made incredible progress over the past years, but the number of female researchers is still low both in academia and in industry. WiCV is organized especially for the following reason: to raise visibility of female researchers, to increase collaborations between them, and to provide mentorship to female junior researchers in the field. In this paper, we present a report of trends over the past years, along with a summary of statistics regarding presenters, attendees, and sponsorship for the current workshop.",
+        "year": 2019,
+        "source": "http://arxiv.org/abs/1909.10225v1",
+        "pdf_url": "https://arxiv.org/pdf/1909.10225v1"
+    },
+    {
+        "id": 11,
+        "title": "Spatial Monitoring and Insect Behavioural Analysis Using Computer Vision for Precision Pollination",
+        "author": "Malika Nisal Ratnayake, Don Chathurika Amarathunga, Asaduz Zaman, Adrian G. Dyer, Alan Dorin",
+        "category": "cs.CV",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.CV",
+            "q-bio.QM"
+        ],
+        "content": "Insects are the most important global pollinator of crops and play a key role in maintaining the sustainability of natural ecosystems. Insect pollination monitoring and management are therefore essential for improving crop production and food security. Computer vision facilitated pollinator monitoring can intensify data collection over what is feasible using manual approaches. The new data it generates may provide a detailed understanding of insect distributions and facilitate fine-grained analysis sufficient to predict their pollination efficacy and underpin precision pollination. Current computer vision facilitated insect tracking in complex outdoor environments is restricted in spatial coverage and often constrained to a single insect species. This limits its relevance to agriculture. Therefore, in this article we introduce a novel system to facilitate markerless data capture for insect counting, insect motion tracking, behaviour analysis and pollination prediction across large agricultural areas. Our system is comprised of edge computing multi-point video recording, offline automated multispecies insect counting, tracking and behavioural analysis. We implement and test our system on a commercial berry farm to demonstrate its capabilities. Our system successfully tracked four insect varieties, at nine monitoring stations within polytunnels, obtaining an F-score above 0.8 for each variety. The system enabled calculation of key metrics to assess the relative pollination impact of each insect variety. With this technological advancement, detailed, ongoing data collection for precision pollination becomes achievable. This is important to inform growers and apiarists managing crop pollination, as it allows data-driven decisions to be made to improve food production and food security.",
+        "year": 2022,
+        "source": "http://arxiv.org/abs/2205.04675v2",
+        "pdf_url": "https://arxiv.org/pdf/2205.04675v2"
+    },
+    {
+        "id": 12,
+        "title": "Global Adaptive Filtering Layer for Computer Vision",
+        "author": "Viktor Shipitsin, Iaroslav Bespalov, Dmitry V. Dylov",
+        "category": "eess.IV",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "eess.IV",
+            "cs.CV"
+        ],
+        "content": "We devise a universal adaptive neural layer to \"learn\" optimal frequency filter for each image together with the weights of the base neural network that performs some computer vision task. The proposed approach takes the source image in the spatial domain, automatically selects the best frequencies from the frequency domain, and transmits the inverse-transform image to the main neural network. Remarkably, such a simple add-on layer dramatically improves the performance of the main network regardless of its design. We observe that the light networks gain a noticeable boost in the performance metrics; whereas, the training of the heavy ones converges faster when our adaptive layer is allowed to \"learn\" alongside the main architecture. We validate the idea in four classical computer vision tasks: classification, segmentation, denoising, and erasing, considering popular natural and medical data benchmarks.",
+        "year": 2020,
+        "source": "http://arxiv.org/abs/2010.01177v4",
+        "pdf_url": "https://arxiv.org/pdf/2010.01177v4"
+    },
+    {
+        "id": 13,
+        "title": "Value Bonuses using Ensemble Errors for Exploration in Reinforcement Learning",
+        "author": "Abdul Wahab, Raksha Kumaraswamy, Martha White",
+        "category": "cs.LG",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.LG",
+            "cs.AI"
+        ],
+        "content": "Optimistic value estimates provide one mechanism for directed exploration in reinforcement learning (RL). The agent acts greedily with respect to an estimate of the value plus what can be seen as a value bonus. The value bonus can be learned by estimating a value function on reward bonuses, propagating local uncertainties around rewards. However, this approach only increases the value bonus for an action retroactively, after seeing a higher reward bonus from that state and action. Such an approach does not encourage the agent to visit a state and action for the first time. In this work, we introduce an algorithm for exploration called Value Bonuses with Ensemble errors (VBE), that maintains an ensemble of random action-value functions (RQFs). VBE uses the errors in the estimation of these RQFs to design value bonuses that provide first-visit optimism and deep exploration. The key idea is to design the rewards for these RQFs in such a way that the value bonus can decrease to zero. We show that VBE outperforms Bootstrap DQN and two reward bonus approaches (RND and ACB) on several classic environments used to test exploration and provide demonstrative experiments that it can scale easily to more complex environments like Atari.",
+        "year": 2026,
+        "source": "http://arxiv.org/abs/2602.12375v1",
+        "pdf_url": "https://arxiv.org/pdf/2602.12375v1"
+    },
+    {
+        "id": 14,
+        "title": "Causal-Paced Deep Reinforcement Learning",
+        "author": "Geonwoo Cho, Jaegyun Im, Doyoon Kim, Sundong Kim",
+        "category": "cs.LG",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.LG",
+            "cs.AI",
+            "stat.ML"
+        ],
+        "content": "Designing effective task sequences is crucial for curriculum reinforcement learning (CRL), where agents must gradually acquire skills by training on intermediate tasks. A key challenge in CRL is to identify tasks that promote exploration, yet are similar enough to support effective transfer. While recent approach suggests comparing tasks via their Structural Causal Models (SCMs), the method requires access to ground-truth causal structures, an unrealistic assumption in most RL settings. In this work, we propose Causal-Paced Deep Reinforcement Learning (CP-DRL), a curriculum learning framework aware of SCM differences between tasks based on interaction data approximation. This signal captures task novelty, which we combine with the agent's learnability, measured by reward gain, to form a unified objective. Empirically, CP-DRL outperforms existing curriculum methods on the Point Mass benchmark, achieving faster convergence and higher returns. CP-DRL demonstrates reduced variance with comparable final returns in the Bipedal Walker-Trivial setting, and achieves the highest average performance in the Infeasible variant. These results indicate that leveraging causal relationships between tasks can improve the structure-awareness and sample efficiency of curriculum reinforcement learning. We provide the full implementation of CP-DRL to facilitate the reproduction of our main results at https://github.com/Cho-Geonwoo/CP-DRL.",
+        "year": 2025,
+        "source": "http://arxiv.org/abs/2507.02910v1",
+        "pdf_url": "https://arxiv.org/pdf/2507.02910v1"
+    },
+    {
+        "id": 15,
+        "title": "Exploring Hierarchy-Aware Inverse Reinforcement Learning",
+        "author": "Chris Cundy, Daniel Filan",
+        "category": "cs.AI",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.AI",
+            "cs.HC"
+        ],
+        "content": "We introduce a new generative model for human planning under the Bayesian Inverse Reinforcement Learning (BIRL) framework which takes into account the fact that humans often plan using hierarchical strategies. We describe the Bayesian Inverse Hierarchical RL (BIHRL) algorithm for inferring the values of hierarchical planners, and use an illustrative toy model to show that BIHRL retains accuracy where standard BIRL fails. Furthermore, BIHRL is able to accurately predict the goals of `Wikispeedia' game players, with inclusion of hierarchical structure in the model resulting in a large boost in accuracy. We show that BIHRL is able to significantly outperform BIRL even when we only have a weak prior on the hierarchical structure of the plans available to the agent, and discuss the significant challenges that remain for scaling up this framework to more realistic settings.",
+        "year": 2018,
+        "source": "http://arxiv.org/abs/1807.05037v1",
+        "pdf_url": "https://arxiv.org/pdf/1807.05037v1"
+    },
+    {
+        "id": 16,
+        "title": "Erasing Undesirable Influence in Diffusion Models",
+        "author": "Jing Wu, Trung Le, Munawar Hayat, Mehrtash Harandi",
+        "category": "cs.CV",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.CV"
+        ],
+        "content": "Diffusion models are highly effective at generating high-quality images but pose risks, such as the unintentional generation of NSFW (not safe for work) content. Although various techniques have been proposed to mitigate unwanted influences in diffusion models while preserving overall performance, achieving a balance between these goals remains challenging. In this work, we introduce EraseDiff, an algorithm designed to preserve the utility of the diffusion model on retained data while removing the unwanted information associated with the data to be forgotten. Our approach formulates this task as a constrained optimization problem using the value function, resulting in a natural first-order algorithm for solving the optimization problem. By altering the generative process to deviate away from the ground-truth denoising trajectory, we update parameters for preservation while controlling constraint reduction to ensure effective erasure, striking an optimal trade-off. Extensive experiments and thorough comparisons with state-of-the-art algorithms demonstrate that EraseDiff effectively preserves the model's utility, efficacy, and efficiency.",
+        "year": 2024,
+        "source": "http://arxiv.org/abs/2401.05779v4",
+        "pdf_url": "https://arxiv.org/pdf/2401.05779v4"
+    },
+    {
+        "id": 17,
+        "title": "Well-posedness of a cross-diffusion population model with nonlocal diffusion",
+        "author": "Gonzalo Galiano, Julián Velasco",
+        "category": "math.AP",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "math.AP"
+        ],
+        "content": "We prove the existence and uniqueness of solution of a nonlocal cross-diffusion competitive population model for two species. The model may be considered as a version, or even an approximation, of the paradigmatic Shigesada-Kawasaki-Teramoto cross-diffusion model, in which the usual diffusion differential operator is replaced by an integral diffusion operator. The proof of existence of solutions is based on a compactness argument, while the uniqueness of solution is achieved through a duality technique.",
+        "year": 2019,
+        "source": "http://arxiv.org/abs/1905.04004v2",
+        "pdf_url": "https://arxiv.org/pdf/1905.04004v2"
+    },
+    {
+        "id": 18,
+        "title": "Diffusion in LanCoIn3n+2 phases studied by perturbed angular correlation",
+        "author": "Randal Newhouse, Gary S. Collins",
+        "category": "cond-mat.mtrl-sci",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cond-mat.mtrl-sci"
+        ],
+        "content": "Jump frequencies of 111In/Cd tracer atoms were measured for a series of layered phases LanCoIn3n+2 using the technique of perturbed angular correlation of gamma rays (PAC). The frequencies were determined by analysis of nuclear quadrupole relaxation produced by fluctuating electric field gradients. Samples were synthesized having nominal values n= 1, 2, 3, 5 and \\infty, with n=\\infty corresponding to the L12 phase LaIn3. The phases form heuristically from LaIn3 by replacing every (n+1)th (100) mixed plane of La and In atoms with a plane of Co-atoms. For the n=1 phase, LaCoIn5, jump frequencies were too small to detect. Two signals were observed, one for indium atoms next to the Co-planes and the other for more distant indium atoms. No relaxation was observed for atoms next to the Co-planes, indicating that there is no diffusion across the Co-planes. With increasing n, jump rates for the other In-atoms increased toward values observed for LaIn3. Jump frequency activation enthalpies for n= 3 and 5 were observed to be the same as for n=\\infty, suggesting the same diffusion mechanism. However, the jump-frequency prefactors were found to be smaller for small n, which is attributed to reductions in the connectivity of the diffusion sublattice. We conclude that diffusion in the layered phases is remarkably similar to diffusion in LaIn3 once the reduced connectivity is taken into account.",
+        "year": 2011,
+        "source": "http://arxiv.org/abs/1109.2262v1",
+        "pdf_url": "https://arxiv.org/pdf/1109.2262v1"
+    },
+    {
+        "id": 19,
+        "title": "Faith in AI can narrow the futures individuals consider",
+        "author": "Aoi Naito, Hirokazu Shirado",
+        "category": "cs.HC",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.HC"
+        ],
+        "content": "Artificial intelligence (AI) predictions are increasingly used to inform human decisions. Here, using a behavioral implementation of the classic Newcomb's paradox in 1,305 participants, we show that AI predictions can also shape the reasoning people use to make a decision. In this paradigm, perceived predictive authority can alter how people reason about their future actions, leading them to forgo a guaranteed reward. Over 40% of participants treated AI as such a predictive authority about their own behavior, significantly increasing the odds of forgoing the guaranteed reward by a factor of 3.39 (95% CI: 2.45-4.70) and reducing earnings by 10.7-42.9%. The effect appeared across AI presentations and decision contexts and remained detectable even when predictions repeatedly failed. When people perceive AI as capable of predicting their personal behavior, the mere presence of AI predictions may shape their decision-making, narrowing the futures they consider.",
+        "year": 2026,
+        "source": "http://arxiv.org/abs/2603.28944v2",
+        "pdf_url": "https://arxiv.org/pdf/2603.28944v2"
+    },
+    {
+        "id": 20,
+        "title": "Foundations of GenIR",
+        "author": "Qingyao Ai, Jingtao Zhan, Yiqun Liu",
+        "category": "cs.IR",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.IR",
+            "cs.LG"
+        ],
+        "content": "The chapter discusses the foundational impact of modern generative AI models on information access (IA) systems. In contrast to traditional AI, the large-scale training and superior data modeling of generative AI models enable them to produce high-quality, human-like responses, which brings brand new opportunities for the development of IA paradigms. In this chapter, we identify and introduce two of them in details, i.e., information generation and information synthesis. Information generation allows AI to create tailored content addressing user needs directly, enhancing user experience with immediate, relevant outputs. Information synthesis leverages the ability of generative AI to integrate and reorganize existing information, providing grounded responses and mitigating issues like model hallucination, which is particularly valuable in scenarios requiring precision and external knowledge. This chapter delves into the foundational aspects of generative models, including architecture, scaling, and training, and discusses their applications in multi-modal scenarios. Additionally, it examines the retrieval-augmented generation paradigm and other methods for corpus modeling and understanding, demonstrating how generative AI can enhance information access systems. It also summarizes potential challenges and fruitful directions for future studies.",
+        "year": 2025,
+        "source": "http://arxiv.org/abs/2501.02842v1",
+        "pdf_url": "https://arxiv.org/pdf/2501.02842v1"
+    },
+    {
+        "id": 21,
+        "title": "Competing Visions of Ethical AI: A Case Study of OpenAI",
+        "author": "Melissa Wilfley, Mengting Ai, Madelyn Rose Sanfilippo",
+        "category": "cs.CY",
+        "pages": 0,
+        "language": "English",
+        "tags": [
+            "cs.CY"
+        ],
+        "content": "Introduction. AI Ethics is framed distinctly across actors and stakeholder groups. We report results from a case study of OpenAI analysing ethical AI discourse. Method. Research addressed: How has OpenAI's public discourse leveraged 'ethics', 'safety', 'alignment' and adjacent related concepts over time, and what does discourse signal about framing in practice? A structured corpus, differentiating between communication for a general audience and communication with an academic audience, was assembled from public documentation. Analysis. Qualitative content analysis of ethical themes combined inductively derived and deductively applied codes. Quantitative analysis leveraged computational content analysis methods via NLP to model topics and quantify changes in rhetoric over time. Visualizations report aggregate results. For reproducible results, we have released our code at https://github.com/famous-blue-raincoat/AI_Ethics_Discourse. Results. Results indicate that safety and risk discourse dominate OpenAI's public communication and documentation, without applying academic and advocacy ethics frameworks or vocabularies. Conclusions. Implications for governance are presented, along with discussion of ethics-washing practices in industry.",
+        "year": 2026,
+        "source": "http://arxiv.org/abs/2601.16513v1",
+        "pdf_url": "https://arxiv.org/pdf/2601.16513v1"
+    }
+]

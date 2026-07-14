@@ -1,0 +1,45 @@
+[
+    {
+        "id": 13,
+        "title": "Value Bonuses using Ensemble Errors for Exploration in Reinforcement Learning",
+        "author": "Abdul Wahab, Raksha Kumaraswamy, Martha White",
+        "category": "cs.LG",
+        "language": "English",
+        "tags": [
+            "cs.LG",
+            "cs.AI"
+        ],
+        "content": "Optimistic value estimates provide one mechanism for directed exploration in reinforcement learning (RL). The agent acts greedily with respect to an estimate of the value plus what can be seen as a value bonus. The value bonus can be learned by estimating a value function on reward bonuses, propagating local uncertainties around rewards. However, this approach only increases the value bonus for an action retroactively, after seeing a higher reward bonus from that state and action. Such an approach does not encourage the agent to visit a state and action for the first time. In this work, we introduce an algorithm for exploration called Value Bonuses with Ensemble errors (VBE), that maintains an ensemble of random action-value functions (RQFs). VBE uses the errors in the estimation of these RQFs to design value bonuses that provide first-visit optimism and deep exploration. The key idea is to design the rewards for these RQFs in such a way that the value bonus can decrease to zero. We show that VBE outperforms Bootstrap DQN and two reward bonus approaches (RND and ACB) on several classic environments used to test exploration and provide demonstrative experiments that it can scale easily to more complex environments like Atari.",
+        "year": 2026,
+        "source": "http://arxiv.org/abs/2602.12375v1",
+        "pdf_url": "https://arxiv.org/pdf/2602.12375v1"
+    },
+    {
+        "id": 19,
+        "title": "Faith in AI can narrow the futures individuals consider",
+        "author": "Aoi Naito, Hirokazu Shirado",
+        "category": "cs.HC",
+        "language": "English",
+        "tags": [
+            "cs.HC"
+        ],
+        "content": "Artificial intelligence (AI) predictions are increasingly used to inform human decisions. Here, using a behavioral implementation of the classic Newcomb's paradox in 1,305 participants, we show that AI predictions can also shape the reasoning people use to make a decision. In this paradigm, perceived predictive authority can alter how people reason about their future actions, leading them to forgo a guaranteed reward. Over 40% of participants treated AI as such a predictive authority about their own behavior, significantly increasing the odds of forgoing the guaranteed reward by a factor of 3.39 (95% CI: 2.45-4.70) and reducing earnings by 10.7-42.9%. The effect appeared across AI presentations and decision contexts and remained detectable even when predictions repeatedly failed. When people perceive AI as capable of predicting their personal behavior, the mere presence of AI predictions may shape their decision-making, narrowing the futures they consider.",
+        "year": 2026,
+        "source": "http://arxiv.org/abs/2603.28944v2",
+        "pdf_url": "https://arxiv.org/pdf/2603.28944v2"
+    },
+    {
+        "id": 21,
+        "title": "Competing Visions of Ethical AI: A Case Study of OpenAI",
+        "author": "Melissa Wilfley, Mengting Ai, Madelyn Rose Sanfilippo",
+        "category": "cs.CY",
+        "language": "English",
+        "tags": [
+            "cs.CY"
+        ],
+        "content": "Introduction. AI Ethics is framed distinctly across actors and stakeholder groups. We report results from a case study of OpenAI analysing ethical AI discourse. Method. Research addressed: How has OpenAI's public discourse leveraged 'ethics', 'safety', 'alignment' and adjacent related concepts over time, and what does discourse signal about framing in practice? A structured corpus, differentiating between communication for a general audience and communication with an academic audience, was assembled from public documentation. Analysis. Qualitative content analysis of ethical themes combined inductively derived and deductively applied codes. Quantitative analysis leveraged computational content analysis methods via NLP to model topics and quantify changes in rhetoric over time. Visualizations report aggregate results. For reproducible results, we have released our code at https://github.com/famous-blue-raincoat/AI_Ethics_Discourse. Results. Results indicate that safety and risk discourse dominate OpenAI's public communication and documentation, without applying academic and advocacy ethics frameworks or vocabularies. Conclusions. Implications for governance are presented, along with discussion of ethics-washing practices in industry.",
+        "year": 2026,
+        "source": "http://arxiv.org/abs/2601.16513v1",
+        "pdf_url": "https://arxiv.org/pdf/2601.16513v1"
+    }
+]
