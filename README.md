@@ -43,7 +43,7 @@ ai_dataset_inspector/
 
 ## System Architecture & Workflow
 
-![System Architecture](docs/architecture.svg)
+<img src="docs/architecture.svg" alt="System Architecture & Workflow" width="700">
 
 ---
 
