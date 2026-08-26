@@ -1,6 +1,5 @@
 import json
 import csv
-from pathlib import Path
 
 from models.paper import Paper
 

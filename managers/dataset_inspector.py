@@ -78,12 +78,12 @@ class DatasetInspector:
         )
 # --------------Search by category------------------
 
-    def papers_by_category(self) -> list[str]:
+    def papers_by_category(self, category: str) -> list[Paper]:
 
-        return sorted({
-            paper.category for paper in self.papers
-        })
-
+        return [
+            paper for paper in self.papers
+            if paper.category.lower() == category.lower()
+        ]
 # --------------Search by tag------------------
 
     def papers_with_tag(self, tag: str) -> list[Paper]:
@@ -165,4 +165,4 @@ class DatasetInspector:
                 errors.append(
                     f"Paper {paper.id} has no PDF URL."
                 )
-            return errors
+        return errors

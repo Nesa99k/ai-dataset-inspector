@@ -9,7 +9,7 @@ The project demonstrates object-oriented programming, file handling, dataset ins
 ## Features
 
 - Load AI research papers from JSON
-- Load datasets from CSV
+- Support loading datasets from JSON and CSV
 - Dataset validation
 - Search papers by title
 - Filter recent papers
@@ -41,6 +41,12 @@ ai_dataset_inspector/
 
 ---
 
+## System Architecture & Workflow
+
+![System Architecture](docs/architecture.svg)
+
+---
+
 ## Technologies
 
 - Python 3.11+
@@ -51,6 +57,7 @@ ai_dataset_inspector/
 - Logging
 - Type Hints
 - Object-Oriented Programming
+- Functional Programming Concepts
 
 ---
 
@@ -92,19 +99,19 @@ This project demonstrates practical use of:
 
 - Classes and Objects
 - Dataclasses
+- Object-Oriented Programming
 - Type Hints
-- JSON Processing
-- CSV Processing
-- pathlib
-- File Handling
+- Modular Project Architecture
+- JSON and CSV Processing
+- File Handling with pathlib
 - Exception Handling
 - Logging
 - Static Methods
+- List and Set Comprehensions
 - Lambda Functions
 - filter()
 - sorted()
 - Generators
-- Project Architecture
 
 ---
 
